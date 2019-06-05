@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Save green save earth</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            margin: 0;
+            padding: 0px;
+            background-image: url("1 (1134).jpg");
+            background-position: center;
+            background-size: cover;
+        }
+        
+        .text1 {
+            list-style: none;
+            position: absolute;
+            top: 65%;
+            left: 50%;
+            text-align: center;
+            transform: translate(-50%, -50%);
+            box-shadow: 5px 5px 10px 5px rgb(37, 46, 23);
+            background-color: aquamarine;
+        }
+        
+        .text1 li {
+            display: inline-block;
+            font-size: 1.5em;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgb(1, 36, 1);
+            padding: 5PX 5PX;
+            margin-right: 10PX;
+            opacity: 1;
+            transition: all 5s ease-in;
+        }
+        
+        ul li:last-child {
+            margin-right: 0;
+        }
+        
+        .text1.hidden li {
+            opacity: 0;
+            background-color: rgb(43, 138, 6);
+        }
+        
+        .hidden li:nth-child(1) {
+            transform: translateX(-200px) translateY(-200px);
+        }
+        
+        .hidden li:nth-child(2) {
+            transform: translateX(50px) translateY(200px);
+        }
+        
+        .hidden li:nth-child(3) {
+            transform: translateX(-50px) translateY(200px);
+        }
+        
+        .hidden li:nth-child(4) {
+            transform: translateX(80px) translateY(-200px);
+        }
+        
+        .hidden li:nth-child(5) {
+            transform: translateX(-20px) translateY(-300px);
+        }
+    </style>
+
+</head>
+
+<body>
+    <!--EDITE BY SOUROV HAZRA DON'T COPY THE CODE +++++++++++++++++++++++++++
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++=======================================
+================================================.......................................................................................
+HAPPY WORLD ENVIROMENTAL DAY 5-JUN-2019
+-->
+    <ul class="text1 hidden">
+        <li>HAPPY</li>
+        <li>WORLD</li>
+        <li>ENVIRONMENTAL</li>
+        <li>DAY</li>
+        <li>2019</li>
+    </ul>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            setTimeout(function() {
+                $(".text1").removeClass("hidden");
+            }, 500);
+        })();
+    </script>
+</body>
+
+</html>
